@@ -1,7 +1,7 @@
-import React, { useState } from 'react'; // Importa useState
+import { useState } from 'react'; 
 import Layout from '../../components/Layout';
 
-export default function SignIn() { // Cambia el nombre a SignIn en lugar de SingIn
+export default function SignIn() { 
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -61,8 +61,8 @@ export default function SignIn() { // Cambia el nombre a SignIn en lugar de Sing
               ¿Olvidaste tu contraseña?
             </a>
           </div>
-          <div className="flex items-center justify-between">
-            <button
+          <div className="flex items-center justify-center">
+            <button // ToDOcambiar color
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
