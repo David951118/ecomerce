@@ -27,7 +27,7 @@ export default function Home() {
         className="rounded-lg border border-black w-80 p-4 mb-4 focus:outline-none"
         onChange={(event) => context.setSearchByTitle(event.target.value)}
       />
-      <div className="grid gap-4 grid-cols-4 w-full max-w-screen-lg">
+      <div className="grid gap-4 grid-cols-2 w-full max-w-screen-lg sm:grid-cols-3 md:grid-cols-4">
         {renderView()}
       </div>
       <ProductDetail />
